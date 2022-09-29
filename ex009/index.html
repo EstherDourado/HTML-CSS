@@ -1,0 +1,61 @@
+<!DOCTYPE HTML> 
+<html>
+    <head lang="pt-br">
+        <meta charset="utf-8">
+        <title>Outras Formatações</title>
+    </head>
+    <body>
+        <h1>Outras Formatações</h1>
+        <h2>Código-Fonte</h2>
+        <!--Font monoespaçada, ela reserva o mesmo espaço para todas as letras-->
+        <p>O comando <code>document.ElementById</code>('teste'),
+        é escrito em linguagem JavaScript</p> 
+
+        <!--code não organiza seu codigo com indentação,
+        mas ao colocar ele dentro de uma tag pre, ele organiza
+        (nele sera considerado a tabulação e as quebras de linha)-->
+        <pre>
+            <code>
+                num=int(input('Digite um Número'))
+                if num % 2 == 0:
+                    print(f'o numero {num} é PAR')
+                else:
+                    print(f'o numero {num} é ÍMPAR')
+                print('fim do programa')
+            </code>
+        </pre>
+
+        <pre>
+            <code>
+    num=int(input('Digite um Número'))
+    if num % 2 == 0:
+        print(f'o numero {num} é PAR')
+    else:
+        print(f'o numero {num} é ÍMPAR')
+    print('fim do programa')
+            </code>
+        </pre>
+
+        <h2>Citações Simples</h2>
+        <!-- q vem de quote(citação) é uma tag semântica-->
+        <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+        
+        <h2>Citações Completas</h2>
+        <p>Segundo Jeff Noble, no seu livro HTML para Leigos:
+            <!--Uma citação grande, ele tem uma quebra de linha
+            e um deslocamento horizontal para lateral direita
+            é possivel colocar um parâmetro chamado 'cite' que 
+            os mecânismos de busca a parte interna do seu site
+            ira saber que o link esta referenciando a citação-->
+            <Blockquote cite="link, aqui será onde voce colocar a quem pertence a citação, direitos autorais">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, 
+                saepe obcaecati cum repellat libero architecto sint ex laudantium ipsum 
+                harum deserunt illo quo eum ad expedita asperiores enim, modi corrupti. 
+            </Blockquote>
+        </p>
+        <h2>Abreviações</h2>
+        <p>Eu estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, e estou adorando</p>
+        <h2>Texto Invertido</h2>
+        <p><bdo dir="rtl">Estou aprendendo coisas em HTML</bdo></p>
+    </body>
+</html>
